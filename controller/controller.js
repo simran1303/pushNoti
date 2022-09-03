@@ -8,10 +8,14 @@ exports.addToken =async (req,res)=>{
 }
 
 exports.getTokenData = async (req,res)=>{
-    const tokenArray =[];
-    const data = await dbData.getToken();
-    tokenArray.push(data[0][0].token)
+    const tokenArray =['ExponentPushToken[KB_gQgBRrHSjElPMhK6wij]'];
+    // const data = await dbData.getToken();
+    // tokenArray.push(data[0][0].token)
      ftoken.token(tokenArray);
-    res.status(200).send(data[0][0].token);
+    res.status(200).send("done");
 }
 
+
+exports.serverRun = async (req,res)=>{
+    res.status(200).send("Server is running");
+}
