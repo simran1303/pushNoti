@@ -1,5 +1,6 @@
 const dbData = require('../model/noti');
 const ftoken = require('../util/token');
+const sequelizeDb = require('../model/seqnoify')
 
 exports.addToken =async (req,res)=>{
     const token = 'ExponentPushToken[KB_gQgBRrHSjElPMhK6wij]'
